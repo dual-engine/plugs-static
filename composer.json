@@ -1,0 +1,47 @@
+{
+  "type": "sqm-admin-plugin",
+  "name": "dualengine-team/plugs-static",
+  "license": "LGPL-2.1",
+  "description": "Static Files for SqmAdmin",
+  "authors": [
+    {
+      "name": "rotoos",
+      "email": "87291030@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "dualengine-team/sqm-install": "^1.0||dev-master"
+  },
+  "extra": {
+    "plugin": {
+      "copy": {
+        "stc/think": "!think",
+        "stc/public/index.php": "!public/index.php",
+        "stc/public/static/err": "!public/static/err"
+      },
+      "init": {
+        "stc/class/Index.php": "app/index/controller/Index.php",
+        "stc/config/app.php": "config/app.php",
+        "stc/config/cache.php": "config/cache.php",
+        "stc/config/cookie.php": "config/cookie.php",
+        "stc/config/database.php": "config/database.php",
+        "stc/config/lang.php": "config/lang.php",
+        "stc/config/log.php": "config/log.php",
+        "stc/config/phinx.php": "config/phinx.php",
+        "stc/config/route.php": "config/route.php",
+        "stc/config/session.php": "config/session.php",
+        "stc/config/view.php": "config/view.php",
+        "stc/public/router.php": "public/router.php",
+        "stc/public/robots.txt": "public/robots.txt",
+        "stc/public/.htaccess": "public/.htaccess"
+      },
+      "clear": true
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "dualengine-team/sqm-install": true
+    }
+  }
+}
