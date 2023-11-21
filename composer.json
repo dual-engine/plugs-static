@@ -1,5 +1,5 @@
 {
-  "type": "sqm-admin-plugin",
+  "type": "think-admin-plugin",
   "name": "dualengine-team/plugs-static",
   "license": "LGPL-2.1",
   "description": "Static Files for SqmAdmin",
